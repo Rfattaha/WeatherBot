@@ -1,7 +1,7 @@
 import requests
 
 def getResp(city):
-    response = requests.get("https://api.openweathermap.org/data/2.5/weather?q=%s&appid=e61e09d2a1525b6751944db317373c0d&units=metric" % (city))
+    response = requests.get("https://api.openweathermap.org/data/2.5/weather?q=%s&appid=TOKEN" % (city))
     getCountry = response.json()["sys"]["country"]
     getCityName = response.json()["name"]
     getWeatherMain = response.json()["weather"][0]["description"]
