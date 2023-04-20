@@ -2,7 +2,7 @@ from telebot import types
 import telebot
 from weather import *
 
-bot = telebot.TeleBot("6201525049:AAFdl6-H4Hp8XsTx0gyodiqBibfskTtFsjc", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
+bot = telebot.TeleBot("TOKEN", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
 
 
 
